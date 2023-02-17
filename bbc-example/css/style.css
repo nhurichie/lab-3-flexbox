@@ -1,0 +1,74 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Base Styling */
+html {
+  font-size: 10px;
+}
+
+nav, section {
+  border: 1px solid black;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo,
+.signin {
+  margin: 5px;
+  flex-basis: 40px;
+  flex: 1;
+}
+
+nav {
+  flex: 10;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+ul li {
+  margin: 5px;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+}
+
+main {
+  display: flex;
+}
+
+main > section {
+  flex: 1;
+  height: 250px;
+}
+
+.flex-featured-stories {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.flex-featured-stories > section {
+  height: 100px;
+  margin: 2px;
+  flex-basis: 48%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
