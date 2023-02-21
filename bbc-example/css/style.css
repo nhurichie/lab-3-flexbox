@@ -12,13 +12,18 @@ html {
   font-size: 10px;
 }
 
-nav, section {
+body {
+  margin: 0 auto; 
+  max-width: 780px;
+}
+
+nav, section, article  {
   border: 1px solid black;
 }
 /******************************************
 /* LAYOUT
 /*******************************************/
-
+/* 
 header {
   display: flex;
   justify-content: space-between;
@@ -32,9 +37,7 @@ header {
   flex: 1;
 }
 
-nav {
-  flex: 10;
-}
+
 
 ul {
   display: flex;
@@ -67,8 +70,54 @@ main > section {
   height: 100px;
   margin: 2px;
   flex-basis: 48%;
+} */
+header {
+  display: flex;
+  align-items: center;
+  
 }
 
+.logo, .signin {
+  flex: 1;
+}
+
+
+nav {
+  height: 30px;
+  flex: 8;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; 
+  margin: 8px;
+}
+
+.welcome {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.flex {
+  display: flex;
+}
+
+.main-article section {
+  height: 200px;
+  flex: 1;
+}
+
+.side-article {
+  flex-wrap: wrap; 
+}
+
+.side-article article {
+  height: 80px;
+  flex: 1;
+  flex-basis: 50%;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
