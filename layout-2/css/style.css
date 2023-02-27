@@ -7,10 +7,33 @@
   box-sizing: border-box;
 }
 
+nav, header, section, footer {
+  border: 1px solid black;
+}
+
 /******************************************
 /* LAYOUT
 /*******************************************/
 
+nav {
+  height: 25px;
+  width: 100%;
+}
+
+header {
+  height: 70px;
+  width: 100%;
+}
+
+ section, footer {
+  height: 50px;
+  width: 100%;
+}
+
+section.two-column {
+  height: 60px;
+  width: 100%;
+}
 
 
 /******************************************
