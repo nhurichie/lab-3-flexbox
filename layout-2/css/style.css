@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-nav, header, section, footer {
+nav, header, section, article, footer {
   border: 1px solid black;
 }
 
@@ -30,10 +30,22 @@ header {
   width: 100%;
 }
 
-section.two-column {
+.flex {
+  display: flex;
+}
+
+.one-third-column {
+  flex: 1
+}
+
+.two-thirds-column {
+  flex: 3
+}
+
+/* section.two-column {
   height: 60px;
   width: 100%;
-}
+} */
 
 
 /******************************************
